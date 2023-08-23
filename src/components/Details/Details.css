@@ -1,0 +1,120 @@
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.left-content {
+    margin: 0px;
+}
+
+.left-content img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.right-content {
+    padding: 0px 1rem;
+}
+
+.right-content h3 {
+    margin: 1rem 0px 0px;
+}
+
+.right-content .chip {
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    padding: .15rem .5rem .35rem;
+    margin: 0px .25rem .5rem 0px;
+    display: inline-block;
+}
+
+.right-content .label {
+    font-weight: bold;
+}
+
+.right-content .cast {
+    margin-top: 2rem;
+}
+
+.details-skimmer {
+    gap: 1rem;
+}
+
+.details-skimmer .group-skimmer {
+    display: flex;
+    background-color: transparent;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.details-skimmer .left-skimmer {
+    width: 25%;
+    height: 300px;
+}
+
+.details-skimmer .right-skimmer {
+    width: 70%;
+    height: 300px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.details-skimmer .title-skimmer {
+    width: 50%;
+    height: 1.5rem;
+}
+
+.details-skimmer .rating-skimmer {
+    width: 2rem;
+    display: inline;
+    height: 1.5rem;
+}
+
+.details-skimmer .subtitle-skimmer {
+    height: 1.5rem;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.details-skimmer .cast-skimmer {
+    height: 5rem;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.details-skimmer .desc-skimmer {
+    height: 8rem;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .details-wrapper,
+    .group {
+        flex-direction: row;
+    }
+
+    .left-content {
+        min-width: 300px;
+        display: flex;
+    }
+
+    .left-content img {
+        width: auto;
+        margin: auto;
+    }
+
+    .right-content h3 {
+        margin: 0px;
+    }
+}
